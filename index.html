@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>2048</title>
+
+        <!-- Links to CSS stylesheets below -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Link to bulma here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"/>
+        <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css" />
+    </head>
+
+    <body>
+        <h1 class="title has-text-weight-bold is-2">2048</h1>
+        <h2>Press the <strong>arrow keys</strong> to move and combine tiles until you get <strong>2048</strong>!</h2>
+        <br>
+        <p class="score subtitle"><strong>Score: </strong>0</p>
+
+        <p class="message"></p>
+        
+        <div class = "game-board-table">
+            <table>
+                <tbody>
+                    <tr>
+                    <td class="1">loading tile 1</td>
+                    <td class="2">loading tile 2</td>
+                    <td class="3">loading tile 3</td>
+                    <td class="4">loading tile 4</td>
+                    </tr>
+                    <tr>
+                    <td class="5">loading tile 5</td>
+                    <td class="6">loading tile 6</td>
+                    <td class="7">loading tile 7</td>
+                    <td class="8">loading tile 8</td>
+                    </tr>
+                    <tr>
+                    <td class="9">loading tile 9</td>
+                    <td class="10">loading tile 10</td>
+                    <td class="11">loading tile 11</td>
+                    <td class="12">loading tile 12</td>
+                    </tr>
+                    <tr>
+                    <td class="13">loading tile 13</td>
+                    <td class="14">loading tile 14</td>
+                    <td class="15">loading tile 15</td>
+                    <td class="16">loading tile 16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <button type="button" class="reset button is-danger is-rounded is-light">Reset Game</button>
+        <br>   
+        <br>             
+        <div id="root"></div>
+
+        <!-- Include links to JavaScript files below -->
+        <!-- Link to jQuery here -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="engine/controller_view.js" type="module"></script>        
+    </body>
+</html>
